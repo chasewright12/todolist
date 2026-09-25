@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  width: 400px;
+
+  padding: 30px;
+  border-radius: 10px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin: 32px auto;
+  padding: 12px;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.description {
+  margin-top: -32px;
+  text-align: center;
+  color: gray;
+  transition: all 0.3s ease;
+}
+
+.description:hover {
+  color: #222;
+}
+
+.img-logo {
+  display: flex;
+  margin: 32px auto;
+  width: 250px;
+}
+
+#task-form {
+  display: flex;
+  gap: 10px;
+}
+
+#task-input {
+  flex: 1;
+
+  padding: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+#task-form button {
+  background: #222;
+  color: white;
+}
+
+#task-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.task-text {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-button {
+  background: #e74c3c;
+  color: white;
+}
+
+#empty-message {
+  margin-top: 20px;
+  color: #888;
+  text-align: center;
+}

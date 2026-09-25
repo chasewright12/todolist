@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>To-Do List</h1>
+      <p class="description">A funniest To-do-list</p>
+      <img class="img-logo" src="/assets/pablo_escobar_without_plate.png" alt="Pablo Escobar Quadar Inshallah Logo">
+
+      <form id="task-form">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Digite uma tarefa..."
+          autocomplete="off"
+        />
+
+        <button type="submit">Add</button>
+      </form>
+
+      <ul id="task-list"></ul>
+
+      
+      <p id="empty-message">
+        Not task added.
+      </p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
